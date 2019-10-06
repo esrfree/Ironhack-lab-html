@@ -1,0 +1,16 @@
+/********** header **********/
+.header img {
+    height: 3rem;
+}
+.search-bar {
+    color: grey
+}
+
+/********** collaboration **********/
+#collaboration {
+    height: 650px;
+    background-image: url("images/collaboration.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
