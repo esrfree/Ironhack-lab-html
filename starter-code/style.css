@@ -14,3 +14,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/********** install **********/
+#install {
+    height: 650px;
+    background-image: url("images/forklift.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
