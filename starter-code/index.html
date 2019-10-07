@@ -1,82 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
-  <title>npm</title>
-</head>
-<body>
-  <nav>
-    <div class="top-left">
-      <a class = "heart" href="#">♥︎</a>
-      <span class="acronym">Neophobe Plebeian Mumpsimus</span>
-    </div>
-    <ul class="top-links">
-      <li><a href="#">npm Enterprise</a></li>
-      <li><a href="#">features</a></li>
-      <li><a href="#">pricing</a></li>
-      <li><a href="#">documentation</a></li>
-      <li><a href="#">support</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>npm</title>
+  </head>
+  <body>
+  <!-- ********** nav ********** -->
+    <nav>
 
-  <!-- ********** header ********** -->
-  <header class="header">
-    <img src="./images/npm-logo.png" alt="npm-logo">
-    <form action="#">
-      <input class="search-bar" type="text" value="find packages">
-      <input class="submit" type="submit" value="🔍">
-    </form>
-    <ul>
-      <li><a href="#">sign up</a> or <a href="#">log in</a></li>
-      <li><img src="images/bear-logo.png" alt="Bear Logo"></li>
-    </ul>
+      <div class="top-left">
+        <a href="#" class="heart">♥︎</a>
+        <span class="acronym">Neophobe Plebeian Mumpsimus</span>
+      </div>
 
-    <h1>Build amazing things</h1>
-    <p>npm is the package manager for JavaScript and the world's largest software registry. Discover packages of reusable code – and assemble them in powerful new ways. </p>
-    <button>Sign up for npm</button>
-  </header>
+      <ul class="top-links">
+        <li><a href="#">npm Enterprise</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">documentation</a></li>
+        <li><a href="#">support</a></li>
+      </ul>
+    </nav>
 
-  <!-- ********** collaboration ********** -->
-  <section id="collaboration">
-    <h2>npm Org is a powerful collaboration — free </h3>
-    <ul>
-      <li>Encourage code discovery and re-use within teams</li>
-      <li>Publish and control access to your own namespace</li>
-      <li>Manage public and private code with the same workflow</li>
-    </ul>
-    <button>Sign up for Orgs</button> <br>
-    or <a href="#">Learn more about Orgs</a>
-  </section>
+    <!-- ********** header ********** -->
+    <header>
+      <div class="header-nav">
 
-  <!-- ********** install ********** -->
-  <section id="install">
-    <h2>What is npm?</h2>
-    <p>Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feeback with others.</p>
-    <button>Install npm</button>
-  </section>
+        <img class="header-logo top-left" src="images/npm-logo.png" alt="nmp logo">
+        <input class="search-bar" type="text" value="find packages">
+        <img class="mag-glass" src="images/mag-glass.png" alt="magnifying glass">
 
-  <!-- ********** blocks ********** -->
-  <section id="blocks">
-    <h2>What can you make with 475,000 building blocks?</h2>
-    <p>The npm registry hosts almost half a million packages of free, reusable code - the largest software registry in the world.</p>
-    <article>
-      <img src="images/binoculars.svg" alt="binoculars">
-      <h3>Find</h3>
-      <p>Libraries like <a href="#">JQuery</a>, <a href="#">Bootstrap</a> <a href="#">React</a> and <a href="#">Angular</a>, and components from frameworks such as Ember.</p>
-    </article>
-    <article>
-      <img src="images/mountain-flag.svg" alt="mountain">
-      <h3>Discover</h3>
-      <p>Packages for mobile, IoT, front end, back end, robotics... everything you need to start building amazing things.</p>
-    </article>
-    <article>
-      <img src="images/backpack.svg" alt="backpack">
-      <h3>Build</h3>
-      <p>Assemble packages like building blocks to quickly develop awesome new projects.</p>
-    </article>
-  </section>
-</body>
+        <div class="header-sign">
+          <p class="top-left"><a href="#">sign up</a> or <a href="#">log in</a></p>
+          <img class="header-logo" src="images/bear-logo.png" alt="bear logo">
+        </div>
+
+      </div>
+
+      <div class="content">
+          <h1>Build amazing things</h1>
+          <p>npm is the package manager for JavaScript and the world’s largest software registry. Discover packages of reusable code — and assemble them in powerful new ways.</p>
+          <button class="radius-button"><a href="#">Sign up for npm</a></button>
+
+      </div>
+    </header>
+
+    <!-- **********collaboration********** -->
+    <section id="collaboration">
+        
+      <img src="images/collaboration.svg" alt="Collaborating with npm Orgs">
+      
+      <div class="collaboration-text">
+        <h2>npm Orgs is powerful<br> collaboration — for free</h2>
+        <ul>
+          <li>Encourage code discovery and re-use within teams</li>
+          <li>Publish and control access to your own namespace</li>
+          <li>Manage public and private code with the same workflow</li>
+        </ul>
+        <button class="radius-button"><a href="#">Sign up for Orgs</a></button>
+        <p class="more">or, <a href="#">Learn more about Orgs</a></p>
+      </div>
+
+    </section>
+
+    <!-- **********install********** -->
+    <section id="install">
+
+      <article class="install-content">
+        <h2>What is npm?</h2>
+        <p>Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.</p>
+        <button class="radius-button"><a href="#">Install npm</a></button>
+      </article>
+
+    </section>
+
+    <!-- **********blocks********** -->  
+    <section id="blocks">
+
+      <div>
+        <h2>What can you make with 650,000 building blocks?</h2>
+        <p>The npm registry hosts the world’s largest collection of free, reusable code.</p>
+      </div>
+
+      <div class="building-content">
+
+        <article class="find">
+          <img src="images/binoculars.svg" alt="binoculars">
+          <h3 class="building-heading">Find</h3>
+          <p>Libraries like <a href="#">jQuery</a>, <a href="#">Bootstrap</a>, <a href="#">React</a>, and <a href="#">Angular</a>, and components from frameworks such as <a href="#">Ember</a>.</p>
+        </article>
+
+        <article class="discover">
+          <img src="images/mountain-flag.svg" alt="mountain flag">
+          <h3 class="building-heading">Discover</h3>
+          <p>Packages for mobile, IoT, front end, back end, robotics… everything you need to start building amazing things.</p>
+        </article>
+
+        <article class="build">
+          <img src="images/backpack.svg" alt="backpack">
+          <h3 class="building-heading">Build</h3>
+          <p>Assemble packages like building blocks to quickly develop awesome new projects.</p>
+        </article>
+
+      </div>
+    </section>
+  </body>
 </html>
+  

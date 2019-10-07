@@ -1,26 +1,196 @@
-/********** header **********/
-.header img {
-    height: 3rem;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+/******************** general **************************/
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
 }
-.search-bar {
-    color: grey
+h1{
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+h2{
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: .7px;
+  margin-top: 0;
+}
+h3{
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.radius-button{
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+button a{
+  font-weight: 300;
+  color: #FFF;
+}
+a{  text-decoration: none;}
+.clearfix{ clear: both;}
+
+/******************** nav bar **************************/
+nav{
+  background-color: #C12127;
+  color: rgba(255,255,255,.8);
+  height: 40px;
+  font-size: .85em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a{
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+}
+.top-links{
+  display: flex;
+  justify-content: flex-end;
+}
+.top-links li{
+  display: block;
+  margin: 0 10px;
 }
 
-/********** collaboration **********/
-#collaboration {
-    height: 650px;
-    background-image: url("images/collaboration.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+/******************** header **************************/
+header{
+  background: url("images/city-scape.svg") no-repeat right bottom;
+  background-color:  rgb(32,101,136);
+  background-size: cover;
+  padding-bottom: 150px;
+}
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  padding: 20px 0;
+}
+.header-logo{
+  height: 40px;
+}
+.search-bar{
+  flex-grow: 4;
+  height: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  background: rgb(31,82,111);
+  border: 1px solid rgba(255,255,255,.2);
+  color: rgba(255,255,255,.2);
+}
+.mag-glass{
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border: 1px solid rgba(255,255,255,.2);
+  opacity: 30%;
+}
+.header-sign{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10px;
+}
+.header-sign a{
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
 }
 
 
-/********** install **********/
-#install {
-    height: 650px;
-    background-image: url("images/forklift.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+.content{
+  width: 25%;
+  margin-left: 20%;
 }
+.radius-button{
+  background: rgb(240, 146, 51);
+}
+
+/******************** collaboration **************************/
+#collaboration{
+  background: rgb(39,53,71);
+  padding: 45px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#collaboration img{
+    flex-grow: 0.5;
+    margin: 0 5%;
+}
+.collaboration-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+#collaboration ul{
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+#collaboration li{
+  margin-bottom: 9px;
+}
+#collaboration button{
+  background: rgb(203,56,55);
+}
+.more a{
+  font-weight: 400;
+  color: #FFF;
+}
+
+/******************** install **************************/
+#install{
+  background: url("images/forklift.svg") no-repeat right top;
+  background-color:  rgb(32,101,136);
+  background-size: cover;
+  padding-bottom: 150px;
+}
+.install-content{
+    width: 25%;
+    margin-left: 20%;
+    padding-top: 5%
+}
+#install button{
+  background: rgb(49, 68, 88);
+}
+
+/******************** blocks **************************/
+#blocks{
+  padding: 5% 20%;
+  color: rgb(135, 145, 156);
+  text-align: center;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#blocks h2{
+  color: rgb(83,88,98);
+}
+#blocks article{
+    padding: 20px;
+    margin: 5px;
+}
+.building-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.find a{
+  color: rgb(208, 74, 73);
+} 
